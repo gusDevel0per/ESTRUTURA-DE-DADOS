@@ -7,7 +7,7 @@ void bubble_sort(char palavra[3][10], int n){
     //char aux;
     
     
-    for (int i=0; i<3;i++){
+    for (int i=0; i<4;i++){
                 printf(" i=%d ", i);
         for(int j = 0; j<2;j++){
             if(strcmp(palavra[i], palavra[i+1])>0){

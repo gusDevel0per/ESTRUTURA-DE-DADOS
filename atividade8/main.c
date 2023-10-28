@@ -19,10 +19,12 @@ int main(int argc, char* argv){
     char valor = 'C';
 
     printf("Ha valor C? %d", lista_verificar_existencia(n0,valor));
+    printf("\n");
     printf("quantas vezes ocorre C?: %d", lista_verificar_ocorrencias);
+    printf("\n");
     
     lista_imprimir_inversa(n0);
-
+printf("\n");
     lista_remover_no(n0, 'V');
 
     lista_imprimir_inversa(n0);

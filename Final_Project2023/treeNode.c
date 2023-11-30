@@ -26,11 +26,27 @@ void ab_inserir_node(No** root, int key){
 void ab_remover_node(No* root, int busca){
     if(busca != NULL && root != NULL){
 
-        
-        ab_remover_node(root->left, busca);
-        ab_remover_node(root->right, busca);
+        if(root->key == busca){
+            if (root->right = NULL){
+                return root->left;
+            }
+            else if(root->left){
+                return root->right;
+            } else {
 
-    }
+            }
+        }
+            else if(root->key < busca){
+                ab_remover_node(root->left, busca);
+            } else {
+                ab_remover_node(root->right, busca);
+            }
+        
+        ab_remover_node(root->right, busca);
+        }
+        
+
+    
 }
 
 void ab_imprimir_pre_ordem(No* root){
@@ -75,4 +91,25 @@ int ab_busca(No* root, int busca){
         return ab_busca(root->right, busca);  
     }
         
+}
+
+int ab_min_max(No* root){
+    
+    if(root == NULL){
+        return 0;
+    }
+    int max = root->key; 
+    int min = root->key;
+    printf("%d", root->key);
+    if (root->key > max);
+    {
+        max = ab_min_max(root->right);
+
+    } 
+    if (root->key < min){
+        min = ab_min_max(root->left);
+    }
+    
+    
+    return max, min;
 }

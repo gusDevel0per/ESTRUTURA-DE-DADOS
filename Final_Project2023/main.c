@@ -38,9 +38,12 @@ int main(int argc, char* argv[]){
     printf("Pos-ordem: \n");
     ab_imprimir_pos_ordem(root);
     
-    busca = NULL;
-    printf("\nRemocao de numero: \n");
-    scanf("%d", &busca);
+    //busca = NULL;
+    //printf("\nRemocao de numero: \n");
+    //scanf("%d", &busca);
+
+    //ab_min_max(root);
+
 
     return 0;
 }

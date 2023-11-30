@@ -15,3 +15,5 @@ void ab_imprimir_pos_ordem(No* root);
 int ab_busca(No* root, int busca);
 
 void ab_remover_node(No* root, int busca);
+
+int ab_min_max(No* root);
